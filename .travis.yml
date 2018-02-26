@@ -2,7 +2,7 @@ install:
   - echo "Nothing"
 
 script:
-  - echo "Nohting"
+  - echo "Nothing"
 
 after_success:
   - docker build -t fundrequestio/keycloak:"$TRAVIS_BRANCH" .
