@@ -1,0 +1,10 @@
+install:
+  - echo "Nothing"
+
+script:
+  - echo "Nohting"
+
+after_success:
+  - docker build -t fundrequestio/keycloak:"$TRAVIS_BRANCH" .
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker push fundrequestio/keycloak:"$TRAVIS_BRANCH"
