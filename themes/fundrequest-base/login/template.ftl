@@ -55,11 +55,6 @@
             <div id="primary-menu" class="collapse navbar-collapse navbar--fnd-primary">
                 <ul class="navbar-nav text-center mr-md-auto">
                     <li class="nav-item">
-                        <a href="https://fundrequest.io/user/requests" class="nav-link waves-effect waves-light">
-                            Your Requests
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="https://fundrequest.io/requests" class="nav-link waves-effect waves-light">Browse</a>
                     </li>
                 </ul>
