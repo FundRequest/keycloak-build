@@ -1,0 +1,199 @@
+.title {
+    margin-bottom: 15px;
+}
+
+#kc-header, #kc-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#kc-header {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+    margin-top: 3rem;
+    color: rgb(68, 68, 68);
+}
+
+#kc-content {
+    background: white;
+    padding: 20px;
+    border-radius: 3px;
+    border-top: 3px solid #49b2e1;
+    box-shadow: 0 5px 6px -3px rgba(0,0,0,.2), 0 9px 12px 1px rgba(0,0,0,.14), 0 3px 16px 2px rgba(0,0,0,.12);
+}
+
+@media (max-width: 768px) {
+    #kc-content {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) {
+    #kc-content {
+        width: 360px;
+    }
+}
+
+.password-container {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#kc-login {
+    float: right;
+}
+
+#kc-error-message p {
+    margin: 0;
+}
+
+.checkbox {
+    margin-bottom: 0;
+}
+
+.remember-me-checkbox label {
+    padding-left: 0;
+    margin-top: .35rem;
+}
+
+.register .register-field {
+    margin-bottom: 15px;
+}
+
+.register .register-button-container {
+    margin-top: 20px;
+}
+
+.reset-password .reset-password-field {
+    margin-bottom: 15px;
+}
+
+.update-password .update-password-field {
+    margin-bottom: 15px;
+}
+
+.update-password .update-password-button-container {
+    margin-top: 20px;
+}
+
+.config-totp .config-totp-button-container {
+    margin-top: 15px;
+}
+
+.totp .totp-button-container {
+    margin-top: 15px;
+}
+
+.update-profile .update-profile-field {
+    margin-top: 15px;
+}
+
+.update-profile .update-profile-button-container {
+    margin-top: 20px;
+}
+
+.template .language-picker {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 160px;
+}
+
+.template .language-picker .form-group {
+    white-space: nowrap;
+
+    /* the below keeps the label in "inline" mode even on narrow screens */
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.template .language-picker .language-picker-dropdown-label i {
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-left: -7px;
+    color: #9ca2af;
+}
+
+.template .language-picker select.form-control {
+    border-color: #afb0b3;
+    background: transparent;
+
+    /* the below keeps the <select> in "inline" mode even on narrow screens */
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+
+/* extra for fnd */
+#kc-content {
+    margin-bottom: 3rem;
+}
+
+#kc-social-providers ul {
+    list-style: none;
+    padding: 0;
+}
+
+.zocial {
+    font-family: Roboto, sans-serif;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    height: 40px;
+    line-height: 18px;
+    text-align: left;
+    padding: 11px 8px 11px 50px !important;
+}
+
+.zocial:focus,
+.zocial:active,
+.zocial:hover {
+    color: #fff;
+}
+
+.zocial:active {
+    top: 1px;
+}
+
+.zocial::before {
+    content: '';
+    position: absolute;
+    border-radius: 2px;
+    left: 2px;
+    top: 2px;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background: transparent no-repeat center center;
+}
+.zocial.google {
+    background-color: #4285F4;
+}
+
+.zocial.google:hover {
+    background-color: #385ec6;
+}
+
+.zocial.google::before {
+    background-image: url(../img/g-logo.svg);
+}
+
+.zocial.github {
+    background-color: #24292e;
+}
+
+.zocial.github:hover {
+    background-color: #393f44;
+}
+
+.zocial.github::before {
+    background-size: 24px 24px;
+    background-image: url(../img/git-logo.svg);
+}
