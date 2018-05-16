@@ -21,18 +21,18 @@
             </div>
 
             <div class="update-profile-field ${messagesPerField.printIfExists('firstName',properties.kcFormGroupErrorClass!)}">
-                <label for="firstName"">${msg("firstName")}</label>
+                <label for="firstName">${msg("firstName")}</label>
                 <input type="text" id="firstName" name="firstName" value="${(user.firstName!'')}" class="form-control"/>
             </div>
 
-            <div class="update-profile-field ${messagesPerField.printIfExists('lastName')}">
+            <div class="update-profile-field ${messagesPerField.printIfExists('lastName',properties.kcFormGroupErrorClass!)}">
                 <label for="lastName">${msg("lastName")}</label>
                 <input type="text" id="lastName" name="lastName" value="${(user.lastName!'')}" class="form-control"/>
             </div>
 
             <div class="row update-profile-button-container">
-                <div id="kc-form-buttons" class="col-6 offset-6 col-sm-4 offset-sm-8">
-                    <button class="btn btn-secondary btn-block" type="submit">${msg("doSubmit")}</button>
+                <div id="kc-form-buttons" class="col-12 text-right">
+                    <button class="btn btn-secondary btn-inline-block px-5" type="submit">${msg("doSubmit")}</button>
                 </div>
             </div>
         </form>
