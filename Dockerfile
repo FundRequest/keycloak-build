@@ -1,4 +1,4 @@
-FROM jboss/keycloak:latest
+FROM jboss/keycloak:3.4.3.Final
 
 # Set environment variables
 ENV PROXY_ADDRESS_FORWARDING=true
