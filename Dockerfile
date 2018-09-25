@@ -7,6 +7,7 @@ ADD libs/dd-java-agent.jar /dd-java-agent.jar
 
 # Copy theme
 ADD themes/ /opt/jboss/keycloak/themes/
+ADD blacklists/ /opt/jboss/keycloak/standalone/data/password-blacklists/
 
 USER jboss
 
