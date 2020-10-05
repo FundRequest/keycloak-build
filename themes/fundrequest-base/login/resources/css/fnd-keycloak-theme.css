@@ -240,3 +240,16 @@ li:last-child > .zocial {
     background-size: 24px 24px;
     background-image: url(../img/git-logo.svg);
 }
+
+#zocial-arkane {
+    background-color: #f74989;
+}
+
+#zocial-arkane:hover {
+    background-color: #f51869;
+}
+
+#zocial-arkane::before {
+    background-size: 24px 24px;
+    background-image: url(../img/arkane-logo.svg);
+}

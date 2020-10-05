@@ -1,4 +1,4 @@
-FROM jboss/keycloak:3.4.3.Final
+FROM jboss/keycloak:11.0.2
 
 # Set environment variables
 ENV PROXY_ADDRESS_FORWARDING=true
@@ -7,11 +7,12 @@ ADD libs/dd-java-agent.jar /dd-java-agent.jar
 
 # Copy theme
 ADD themes/ /opt/jboss/keycloak/themes/
+ADD blacklists/ /opt/jboss/keycloak/standalone/data/password-blacklists/
 
 USER jboss
 
 expose 8080
 
-ENTRYPOINT [ "/opt/jboss/docker-entrypoint.sh" ]
+ENTRYPOINT [ "/opt/jboss/tools/docker-entrypoint.sh" ]
 
-CMD ["-b", "0.0.0.0"]
+CMD ["-b", "0.0.0.0", "-Dkeycloak.profile.feature.admin_fine_grained_authz=enabled -Dkeycloak.profile.feature.token_exchange=enabled"]
